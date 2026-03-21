@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
@@ -6,12 +6,13 @@ projects = [
     {
         'title': 'Dayelis Discord TTRPG Bot',
         'description': 'A Discord bot designed and maintained by me, built using Python and discord.py, to help manage the server and provide information regarding our game sessions and game system.',
-        'link': 'https://github.com/ThatOneSongbird/Dayelis'
+        'link': 'https://github.com/ThatOneSongbird/Dayelis',
+        'image': 'images/dayelis.png'
     },
     {
         'title': 'Personal Portfolio Website',
         'description': 'This very website! Built using Flask and Python, it serves as a showcase of my projects and skills.',
-        'link': ''
+        'link': 'https://github.com/ThatOneSongbird/Portfolio-Website'
     },
     {
         'title': 'Django TTRPG Blog',
@@ -27,6 +28,6 @@ def home():
 
 @app.route('/about')
 def about():
-    return render_template('about.html', title='About')
+    return render_template('about.html', title='About Me')
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')

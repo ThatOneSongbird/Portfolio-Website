@@ -1,4 +1,54 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1>About Me</h1>
-{% endblock content%}
+    <!--Image and header-->
+    <div class = "text-center">
+        <h1>About Me</h1>
+    </div>
+    <div class = "text-center">
+        <img src="{{ url_for('static', filename='images/profile.jpg')}}" class="rounded" alt ="Profile Picture" width="200" height="356">
+    </div>
+    <!--About me section-->
+    <div class="card mt-3">
+        <div class="card-body">
+             <p>Now that you've seen some of my projects, I thought it would be nice to share a little bit about myself! My name is Ian Johnson, and I'm a software developer from the Fort Worth metroplex with a passion for creating projects that are applicable to both my education, and my personal interests.
+            </p>
+            <p>I am currently a student at University of Texas at Arlington pursuing a degree in Computer Science, with a focus on wanting to learn more about game development, and gaining more professional skills that will help me in my future. I am a massive fan of TTRPGS, I am an avid gamer, and I've been grinding 
+                through personal projects as I start to build my own portfolio. I currently have experience in Python, Java, C# (with a focus on the Unity library), C, and SQL. I'm always eager to learn more, enthusiastic, and opportunistic. I'm very quick to learn and excel in team environments, as I'm friendly and always willing to help. I'm looking to pursue any career in software development, game development, and have a personal interest in AI and Machine Learning.
+            </p>
+            <p> If you would like to contact me, here is some of my contact information where you can reach out if you have any professional interests.
+            </p>
+        </div>
+    </div>
+    <!--Contact information table-->
+    <table class = "table table-striped">
+        <tr>
+            <td><strong>Name</strong></td>
+            <td>Ian Johnson</td>
+        </tr>
+        <tr>
+            <td><strong>Age</strong></td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td><strong>Email</strong></td>
+            <td>tempeststorms91@gmail.com</td>
+        </tr>
+        <tr>
+            <td><strong>Address</strong></td>
+            <td>Fort Worth, TX</td>
+        </tr>
+        <tr>
+            <td><strong>Resume</strong></td>
+            <td>
+                <a href="{{ url_for('static', filename='files/Ian_Johnson_Resume.pdf') }}" download>Download Resume</a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Cover Letter</strong></td>
+            <td>
+                <a href="{{ url_for('static', filename='files/Ian_Johnson_Cover_Letter.pdf') }}" download>Download Cover Letter</a>
+            </td>
+        </tr>
+    </table>
+{% endblock content %}
+
