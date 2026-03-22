@@ -1,12 +1,17 @@
 {% extends "layout.html" %}
-{% block content %}
-    <section class="intro">
-        <h1>Hi, I'm Ian!</h1>
-        <p>Welcome to my portfolio website! In this page, you will find my projects, and you can go into each project to learn more about them from the descriptions, and the Github links.</p>
-    </section>
 
+{% block hero %}
+    <div class="hero" style="margin-top:56px;">
+        <div class="text-center">
+            <h1>Welcome to my Flask Portfolio!</h1>
+            <p>This is my portfolio website used to show off a few of my projects. In this page, you will find the project names, as well as links attached to each of the projects, and a brief description over their use.</p>
+        </div>
+    </div>
+{% endblock hero %}
+
+{% block content %}
     <section class="projects">
-        <h1>Projects</h1>
+        <h1 class="text-center">Projects</h1>
         <hr>
         {% for project in projects %}
             <article>
