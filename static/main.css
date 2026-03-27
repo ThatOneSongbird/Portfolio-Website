@@ -8,8 +8,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #444444;
 }
 
-.bg-forestgreen {
-  background-color: #1c9946;
+.bg-royalblue {
+  background-color: #3420a1;
 }
 
 .site-header .navbar-nav .nav-link {
@@ -22,6 +22,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .site-header .navbar-nav .nav-link.active {
   font-weight: 500;
+}
+
+.site-header nav{
+  border-bottom:3px solid gold
 }
 
 .content-section {
@@ -80,7 +84,7 @@ a.article-title:hover {
 }
 
 .hero {
-  background-color: #b4c7ae;
+  background-color: #a3c5d8;
   margin-left: -12px;
   margin-right: -12px;
   padding: 60px 40px;
